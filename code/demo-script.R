@@ -9,3 +9,12 @@
 # Date: 10-03-2019
 -------------------------------------------------------------------------------
   
+  # packages
+  library(dplyr)    # data wrangling
+library(ggplot2)  # graphics
+
+dat=read.csv("gitdemo/data/nba2018-players.csv")
+
+warriors=filter(dat,dat$team=="GSW")
+write.csv(warriors, 'gitdemo/data/warriors.csv', row.names = FALSE)
+
