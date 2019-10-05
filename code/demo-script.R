@@ -50,7 +50,7 @@ dev.off()
 png(filename = "gitdemo/images/scatterplot2-height-weight.png", 
     pointsize = 20)
 plot(dat$height, dat$weight, pch = 20, 
-     xlab = 'Height', ylab = 'Height')
+     xlab = 'Height', ylab = 'Weight')
 dev.off()
 
 ggplot(dat, aes(x= height, y= weight)) + geom_point() + facet_grid(position ~ .)
